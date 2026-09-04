@@ -90,12 +90,6 @@ def health_check():
 
 if __name__ == '__main__':
 
-    port = int(
-        os.environ.get(
-            'PORT',
-            5000
-        )
-    )
 
     socketio.run(
         app,
